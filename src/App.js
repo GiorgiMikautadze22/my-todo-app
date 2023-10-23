@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import InputForm from "./components/InputForm";
+import Actions from "./Actions";
+import NewItem from "./components/NewItem";
 
 function App() {
+  const { handleSubmit, handleChange, input, todos } = Actions();
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>All tasks</h1>
+      <InputForm
+        handleSubmit={handleSubmit}
+        handleChange={handleChange}
+        input={input}
+      />
+      <ul>
+        {todos.map((todo) => {
+          return <li>{todo}</li>;
+        })}
+      </ul>
     </div>
   );
 }
