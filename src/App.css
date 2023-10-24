@@ -1,1 +1,107 @@
-    
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato";
+}
+
+body {
+  background-color: #ea5959;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.App {
+  display: flex;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0px 10px 10px 0px #00000040;
+  min-height: 700px;
+  min-width: 950px;
+}
+
+.categories {
+  border-right: 1px solid #d8d8d8;
+  padding: 40px;
+  padding-top: 120px;
+}
+
+.todoList {
+  padding: 50px;
+  width: 100%;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 50px;
+  color: #525252;
+}
+
+h1 {
+  font-size: 31px;
+  margin-bottom: 25px;
+}
+
+.todoInput {
+  width: 80%;
+  background-color: #f3f3f3;
+  height: 47px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  padding-left: 30px;
+  margin-bottom: 35px;
+}
+
+ul {
+  display: grid;
+  gap: 22px;
+}
+
+li {
+  font-size: 18px;
+  font-weight: 400;
+  color: #5a5a5a;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.todo-text {
+  display: flex;
+  gap: 20px;
+}
+
+.todo-text input {
+  width: 28px;
+  height: 28px;
+}
+
+button {
+  border: none;
+  background-color: white;
+}
+
+span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.category {
+  width: 115px;
+  height: 24px;
+  background-color: #ea5959;
+  border-radius: 4px;
+}
+
+.active {
+  color: red;
+  font-weight: 700;
+}

@@ -1,4 +1,4 @@
-function InputForm({ handleSubmit, handleChange, addTodo, input }) {
+function InputForm({ handleSubmit, handleChange, input }) {
   return (
     <form onSubmit={handleSubmit}>
       <input
@@ -6,10 +6,8 @@ function InputForm({ handleSubmit, handleChange, addTodo, input }) {
         placeholder="Enter your todo"
         value={input}
         onChange={handleChange}
+        className="todoInput"
       />
-      <button type="submit" onClick={addTodo}>
-        Add
-      </button>
     </form>
   );
 }
